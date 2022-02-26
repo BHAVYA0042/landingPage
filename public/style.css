@@ -1,0 +1,340 @@
+body{
+  margin: 0;
+}
+body p{
+  font-size: 1.2vw;
+}
+/* *******************************UPPER BAR***************************** */
+.upperBar{
+  background-color: #00B4D8;
+  color: white;
+  padding: 1% 10%;
+}
+.upperBar em{
+  padding: 0 4%;
+}
+.upperBar p{
+  margin-bottom: 0;
+}
+.left_content li{
+  margin-right: 2%;
+}
+.right_content li{
+  margin-left: 4%;
+}
+.upperBar:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.upperBar ul{
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+  margin-bottom: 0 !important;
+}
+.left_content{
+  width:50%;
+  float: left;
+}
+.right_content{
+  width: 20%;
+  float: right;
+}
+/* ************************************NAVBAR***************** */
+.top_bar{
+  padding: 10%;
+}
+
+.logo{
+  width:20%;
+  float:left
+}
+.tabs{
+  width: 50%;
+  float:left;
+  text-align: right;
+  padding: 0 10% 0 33%;
+}
+
+.square{
+  width:20px;
+  height:20px;
+  border: 2px solid blue;
+  border-top-width: 4px;
+  border-left-width: 4px;
+  float: left;
+  margin-right: 3px;
+  margin-top: 5px;
+}
+
+
+/* ******************************INTRODUCTION****************************** */
+
+.intro{
+  background-color: #DFF6FF;
+  padding: 5% 5% 0 10%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.text h1{
+  font-size: 3vw;
+  margin: 2% 0;
+}
+.dp{
+  width: 100%;
+}
+/* .text{
+  width:20%;
+  float: right;
+  position: absolute;
+} */
+.main_buttons{
+  font-size: 1.5vw;
+  color: white;
+  padding: 9px 22px;
+  background-color:#00B4D8;
+  border: solid 1px #00B4D8;
+  border-radius: 5px;
+  margin-top: 2%;
+}
+
+/* *****************************MID SECTION**************** */
+.mid{
+  padding: 7% 5% 5% 10%;
+}
+.mid_box{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-column-gap: 4%;
+}
+
+.mid_text{
+  padding-right: 5%;
+  margin-right: 8%;
+
+}
+.mid_text h2{
+  font-size: 2vw;
+  margin: 2% 0;
+}
+.mid_image{
+  position: relative;
+}
+.mid_image img{
+  width: 85%;
+  position: relative;
+  z-index:-1;
+}
+.object{
+  position: absolute;
+  top:40%;
+  left: -7%;
+  z-index: 10;
+
+
+}
+.triangle{
+   width: 0;
+   height: 0;
+   border-top: 12.5px solid transparent;
+   border-left: 25px solid white;
+   border-bottom: 12.5px solid transparent;
+   position: absolute;
+   bottom:30%;
+   right:5%;
+ }
+.circle {
+   width: 50px;
+   height: 50px;
+   padding: 60%;
+   background: #00B4D8;
+   border: solid 3.5px white;
+   border-radius: 50%
+ }
+ .icon_line{
+   display: grid;
+   grid-template-columns: repeat(4,minmax(0,1fr));
+   grid-column-gap: 4%;
+   padding: 7%;
+ }
+ .services{
+   list-style: none;
+   align-items: center;
+   padding-left: 12%;
+ }
+ .service_icon{
+   margin-left: 20%;
+ }
+ .services em{
+   font-style: normal;
+   font-weight: bolder;
+ }
+
+ /* *******************************SERVICES*********************** */
+
+ .card_sec{
+   background-color: #DFF6FF;
+   padding: 5% 5% 5% 10%;
+   text-align: center;
+ }
+ .card_heading{
+   padding: 2% 20%;
+ }
+ .card{
+   margin-left: 20px;
+   text-align: center;
+   padding: 15% 5%;
+   border: 1px solid black;
+   position: relative;
+ }
+ .crown{
+   width: 20px;
+   height: 20px;
+   padding:10%;
+   border:solid 1px white;
+   border-radius: 50%;
+   background: white;
+   position:absolute;
+   top:-30px;
+   left:120px;
+ }
+ .crown img{
+   width:80%;
+   color:blue;
+   position: absolute;
+   top:10px;
+   left:0px;
+ }
+
+ .grid_box{
+    padding: 5% 5% 5% 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-column-gap: 2%;
+    margin-bottom: 2%;
+ }
+
+
+/* ********************FOOTER************************* */
+
+ .footer{
+   background-color: black;
+   color:white;
+   padding: 5% 5% 0 10%;
+   display: grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+   grid-column-gap: 4%;
+ }
+
+ .left_text{
+   padding: 8%;
+
+ }
+ .right_text{
+   padding: 8%;
+   padding-left: 0;
+ }
+
+
+
+/* ****************************MOBILE DEVICES****************************** */
+ @media (max-width:425px) {
+   body p{
+     font-size: 4vw;
+   }
+   .main_buttons{
+     font-size: 4vw;
+     color: white;
+     padding: 5px 11px;
+     background-color:#00B4D8;
+     border: solid 1px #00B4D8;
+     border-radius: 5px;
+     margin-top: 2%;
+   }
+
+   .footer{
+     background-color: black;
+     color:white;
+     padding: 5% 5% 0 10%;
+     display: grid;
+     grid-template-columns: repeat(1, minmax(0, 1fr));
+     /* grid-row-gap: 4%;
+     grid-column-gap: 4%; */
+   }
+   .footer p{
+     font-size: 4vw;
+   }
+   .left_text{
+     padding: 6%;
+
+   }
+   .right_text{
+     padding: 6%;
+   }
+
+/**************** SERVICES ***********/
+
+   .grid_box{
+      padding: 5% 5% 5% 0;
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      grid-column-gap: 2%;
+      grid-row-gap: 6%;
+      margin-bottom: 25%;
+   }
+   .card_sec{
+     padding: 5% 5% 25% 10%;
+   }
+   .crown{
+
+     top:-30px;
+     left:120px;
+   }
+   /* ************MID******************** */
+   .mid_image img{
+     width: 85%;
+   }
+   .mid_box{
+     display: grid;
+     grid-template-columns: repeat(1, minmax(0, 1fr));
+     grid-column-gap: 4%;
+     grid-row-gap: 4%;
+   }
+   .mid_text h2{
+     font-size: 4.5vw;
+     margin: 2% 0;
+   }
+   .icon_line{
+     display: grid;
+     grid-template-columns: repeat(2,minmax(0,1fr));
+     grid-column-gap: 0;
+     padding: 0;
+     padding-top: 20%;
+   }
+   .services{
+     list-style: none;
+     padding-left: 0;
+   }
+   .upperBar p{
+     font-size: 2vw;
+   }
+
+/* ************INTRO********* */
+.intro{
+  background-color: #DFF6FF;
+  padding: 5% 5% 0 10%;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-column-gap: 4%;
+}
+.text h1{
+  font-size: 6vw;
+  margin: 2% 0;
+}
+.dp{
+  width: 100%;
+  margin-left: 90px;
+}
+
+}
