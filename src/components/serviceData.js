@@ -5,7 +5,7 @@ const data=[
     key:1,
     title:"Financial Consulting",
     content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ",
-    icon:"images\\350-3503162_handshake-clipart-transparent-apreton-de-manos-vector-png-removebg-preview__1_-removebg-preview.png"
+    icon:"images\\handshake.png"
   },
   {
     key:2,
